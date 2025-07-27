@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head><title>Success</title>
+<link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+<script src="{% static 'js/main.js' %}"></script>    
+</head>
+<body>
+<h2>Login Successful</h2>
+<p>Welcome, {{ user.username }}!</p>
+</body>
+</html>

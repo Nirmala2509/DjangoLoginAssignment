@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <script src="{% static 'js/main.js' %}"></script>
+</head>
+<body>
+    
+    <h1>Welcome to the User Management System</h1>
+    <ul>
+        <li><a href="/signup/">Signup</a></li>
+        <li><a href="/login/">Login</a></li>
+        <li><a href="/users/">Get All Users (JSON)</a></li>
+        <li><a href="/user/newemail@example.com/">Get User by Email</a></li>
+        <li><a href="/user/update/newemail@example.com/">Update User (use Thunder Client)</a></li>
+        <li><a href="/user/delete/newemail@example.com/">Delete User (use Thunder Client)</a></li>
+    </ul>
+</body>
+</html>
